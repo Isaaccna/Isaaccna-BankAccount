@@ -31,9 +31,9 @@ public class BankServiceTest {
     @Test
     public void bankServiceTest3(){
         BankService bankService = new BankService();
-        // bankService.deposit(500);
+        bankService.deposit(500);
         bankService.deposit(200);
-        double expected = 200;
+        double expected = 700;
         double actual = bankService.getBalance();
         Assert.assertEquals(expected, actual,.01);
     }
